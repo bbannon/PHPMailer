@@ -1,5 +1,11 @@
 # PHPMailer Change Log
 
+## WIP
+* Validate `MessageDate` before including it in headers
+* Minor feature: some common non-RFC date formats and DateTime instances are now automatically converted to the right format
+* Strip breaks from `XMailer`, `ContentType`, and `CharSet` properties
+* Enforce strict checks on `Encoding` values
+
 ## Version 7.0.2 (January 9th, 2026)
 * Fixes for sendmail parameter problems in WordPress, thanks to @SirLouen
 * Reduce memory consumption when sending large attachments by @RobinvanderVliet
