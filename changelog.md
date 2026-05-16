@@ -1,14 +1,20 @@
 # PHPMailer Change Log
 
-## WIP
-* Validate `MessageDate` before including it in headers
-* Minor feature: some common non-RFC date formats and DateTime instances are now automatically converted to the right format
-* Strip breaks from `XMailer`, `ContentType`, and `CharSet` properties
-* Enforce strict checks on `Encoding` values
+## Version 7.1.0 (May 15th, 2026)
+* Validate `MessageDate` before including it in headers.
+* Minor feature: some common non-RFC date formats and DateTime instances are now automatically converted to the right format for `MessageDate`.
+* Strip breaks from `XMailer`, `ContentType`, and `CharSet` properties.
+* Strip breaks from `username` and `password` properties before use in `POP3`.
+* Enforce strict checks on `Encoding` values.
+* Ease BC IMAP issues by allowing the `parseAddresses` `$useimap` parameter to be `false` or `null` without triggering a deprecation warning.
+* Updated Turkish and Norwegian translations.
+* Test case cleanup and improvements by @jrfnl.
+* Fix crash if `Mailer` ended up empty.
+* Use Ubuntu 24.04 for tests.
 
 ## Version 7.0.2 (January 9th, 2026)
-* Fixes for sendmail parameter problems in WordPress, thanks to @SirLouen
-* Reduce memory consumption when sending large attachments by @RobinvanderVliet
+* Fixes for sendmail parameter problems in WordPress, thanks to @SirLouen.
+* Reduce memory consumption when sending large attachments by @RobinvanderVliet.
 
 ## Version 7.0.1 (November 25th, 2025)
 * Use From domain when generating CIDs in msgHTML.
